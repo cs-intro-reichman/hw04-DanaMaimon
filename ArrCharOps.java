@@ -37,6 +37,11 @@ public class ArrCharOps {
      */
     public static char charAt(char[] arr, int index) 
     {
+        if (index < 0 || index >= arr.length) 
+        {
+            return (char) 0;
+            
+        }
         char c = ' ';
         for (int i = 0; i < index; i++)
         {
