@@ -44,7 +44,7 @@ public class MyString {
         {
             for (int j = 0; j < str1.length(); j ++)
             {
-                if (str2.charAt(i) == str1.charAt(j)) 
+                if (str2.charAt(i) == str1.charAt(j) && str1.length() - j >= str2.length()) 
                 {
                     s = s + str2.charAt(i);
                     break;
